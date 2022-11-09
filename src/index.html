@@ -1,12 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Számonkérés</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>szobrok</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h2 class="sima">Szobrok:</h2> <br>
+                <h2 class="sima" id="dbszam">0</h2>
+            </div>
+            <div class="col-md-6 text-center">
+                <h2 class="sima">Szobrok összesített ára:</h2> <br>
+                <h2 class="sima" id="osszpenz">0</h2>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="row">
+        <div class="row">
+            <label class="col-md-2">Név:</label>
+            <input type="text" id="nev" class="col-md-10">
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p id="rosszNev"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-md-2">Évjárat:</label>
+            <input type="number" id="ev" class="col-md-10">
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p id="rosszEv"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-md-2">Ár:</label>
+            <input type="number" id="ar" class="col-md-10" placeholder="(Ft)">
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p id="rosszAr"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-md-2">Magasság:</label>
+            <input type="number" id="magassag" class="col-md-10" placeholder="(cm)">
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p id="rosszMagassag"></p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-5"></div>
+            <button class="col-md-2" id="felvetel">Felvétel</button>
+            <div class="col-md-5"></div>
+        </div>
+    </div>
+
+    <script src="/dist/main.js"></script>
 </body>
 </html>
